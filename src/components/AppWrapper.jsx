@@ -95,7 +95,7 @@ function AppWrapper({title, children}) {
         <div className='flex h-screen main__app'>
             {loading ?
 
-                <div className='w-full h-full full-center border main__app--loader'>
+                <div className='w-full h-full full-center main__app--loader'>
                     <Loader/>
                 </div>
 
