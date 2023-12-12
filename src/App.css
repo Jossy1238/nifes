@@ -91,6 +91,7 @@ button{
   width: 50rem;
   background: var(--bg-gradient);
   color: white;
+  max-width: 100%;
 }
 
 .faq-item p{font-size: 1rem;}
@@ -338,3 +339,4 @@ textarea{
 .event__card img{
   height: 20rem;
 }
+

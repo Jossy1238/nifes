@@ -57,15 +57,15 @@ function Home(props) {
                         <img src="/hero.png" alt="" />
                     </div>
                 </section>
-                <section className='flex px-5 gap-5 py-5 justify-between items-center'>
-                    <div className='flex-1'>
+                <section className='flex px-5 gap-5 py-5 justify-between items-center why__section'>
+                    <div className='flex-1 why__left'>
                         <h3 className="section__title">Why Nifes</h3>
                         <p className='mb-3 w-3/4'>
                         Because it's more than just a Alumni; it's a community, a source of learning, and a cherished chapter in our lives that continues to shape our present and future!
                         </p>
                         <NavLink to='/about'><button className='main__btn'>Know More</button></NavLink>
                     </div>
-                    <div className='flex-1 flex flex-wrap justify-between gap-3'>
+                    <div className='w-3/5 flex flex-wrap justify-between gap-3'>
                         {new Array(4).fill(0).map((_, i)=>(
                             <div className={`why__box--repeated bg-white p-2 shadow-5 border-top-${i+1}`}>
                                 <img src={`why${i+1}.svg`} alt="" className='why__icon' />
@@ -87,7 +87,7 @@ function Home(props) {
                         :  
 
                         <>
-                            <div className='flex w-full flex-wrap justify-center gap-3 px-5'>
+                            <div className='flex home__cards w-full flex-wrap justify-center gap-3 px-5'>
                                 {upcomingEvents.map((event, i)=>(
                                     <EventCard key={i} event={event}/>
                                 ))}
@@ -113,7 +113,7 @@ function Home(props) {
                 </section>
                 <section className='flex flex-col items-center py-5'>
                     <h3 className="section__title text-center">Alumni Testimonial</h3>
-                    <div className='flex justify-center gap-5 mt-3'>
+                    <div className='flex flex-wrap justify-center gap-5 mt-3'>
                         {new Array(2).fill(0).map((_, i)=>(
                             <div className='testimonial__repeated bg-white py-2 px-2 text-center w-1/3 flex flex-col items-center'>
                                 <img src="/hero.png" alt="" className="alumni__rounded cover rounded-full" />

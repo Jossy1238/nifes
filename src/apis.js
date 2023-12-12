@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const API_URL = "http://localhost:8000";
+export const API_URL = "https://nifes-backend.onrender.com";
 
 axios.defaults.withCredentials = true;
 
@@ -140,4 +140,13 @@ export async function deleteEvent(id){
             )
             .then(response => response.data)
 
+}
+
+
+export async function subscribe(data){
+    const url = `${API_URL}/subscribe`
+    return axios.post(
+            url, data,
+            )
+            .then(response => response.data)
 }

@@ -45,7 +45,7 @@ function Event(props) {
                     <Loader/>
                 </div>
                 :
-                <section className='p-5 flex flex-col items-center'>
+                <section className='p-5 flex flex-col items-center view__event'>
                     <div onClick={()=>navigate(-1)} className='w-3/4 mb-2 cursor-pointer'><i className='fas fa-arrow-left'></i>&nbsp;&nbsp;Back</div>
                     <div className='w-3/4'>
                         <img src={`${API_URL}/images/${event.image}`} alt="" />

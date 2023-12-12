@@ -45,7 +45,11 @@ function MyEvents(props) {
                         <h2 className='text-3xl font-500'>My Events</h2>
                         <p className='opacity-5 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eligendi?</p>
                     </div>
-                    <NavLink to='/my-events/create'><button className='main__btn'>Create Event</button></NavLink>
+                    <NavLink to='/my-events/create'><button className='main__btn'>
+                        <span>Create Event</span>
+                        <i className='fas fa-plus'></i>
+                        </button>
+                    </NavLink>
                 </div>
                 <>
                     {loading?

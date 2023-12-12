@@ -94,7 +94,7 @@ function EditAlumni(props) {
                     <>            
                         {message.text && <div className={`border mt-2 w-full ${message.type=="error" ? "label__error":"label__success"}`}>{message.text}</div>}
         
-                        <div className="flex gap-2 mt-2">
+                        <div className="flex gap-2 form__row mt-2">
                             <div className="form__group">
                                 <label htmlFor="name">Alumni Name</label>
                                 <input type="text" name='name' id='name' placeholder='Enter Alumni Name' value={user.fullName} className='flex-1' onChange={handleInputChange} required/>
@@ -104,7 +104,7 @@ function EditAlumni(props) {
                                 <input type="text" name='username' id='username' placeholder='Enter username' value={user.username} className='flex-1' onChange={handleInputChange} required/>
                             </div>
                         </div>
-                        <div className="flex gap-2 mt-1">
+                        <div className="flex gap-2 form__row mt-1">
                             <div className="form__group">
                                 <label htmlFor="phoneNumber">Phone Number</label>
                                 <input type="text" name='phoneNumber' id='phoneNumber' placeholder='Enter phone number' value={user.phoneNumber} className='flex-1' onChange={handleInputChange}/>
@@ -114,7 +114,7 @@ function EditAlumni(props) {
                                 <input type="text" name='currentCountry' id='country' placeholder='Enter country' value={user.currentCountry} className='flex-1' onChange={handleInputChange} required/>
                             </div>
                         </div>
-                        <div className="flex gap-2 mt-1">
+                        <div className="flex gap-2 form__row mt-1">
                             <div className="form__group">
                                 <label htmlFor="major">Majors</label>
                                 <input type="text" name='major' id='major' placeholder='Enter major' value={user.major} className='flex-1' onChange={handleInputChange} required/>
@@ -124,7 +124,7 @@ function EditAlumni(props) {
                                 <input type="text" name='degree' id='degree' placeholder='Enter degree' value={user.degree} className='flex-1' onChange={handleInputChange} required/>
                             </div>
                         </div>
-                        <div className="flex gap-2 mt-1">
+                        <div className="flex gap-2 form__row mt-1">
                             <div className="form__group">
                                 <label htmlFor="startYear">Year of entering University</label>
                                 <input type="text" name='joinYear' id='startYear' placeholder='Enter Year' value={user.joinYear} className='flex-1' onChange={handleInputChange}/>

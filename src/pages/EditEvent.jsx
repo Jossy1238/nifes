@@ -99,7 +99,7 @@ function EditEvent(props) {
                     </div>
                     {message.text && <div className={`border mt-2 w-full ${message.type=="error" ? "label__error":"label__success"}`}>{message.text}</div>}
 
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex gap-2 mt-2 form__row">
                         <div className="form__group">
                             <label htmlFor="eventName">Event Name</label>
                             <input type="text" name='name' id='eventName' placeholder='Enter Event Name' value={formFields.name} className='flex-1'  onChange={handleInputChange} required/>
@@ -113,7 +113,7 @@ function EditEvent(props) {
                             </select>
                         </div>
                     </div>
-                    <div className="flex gap-2 mt-2">
+                    <div className="flex gap-2 mt-2 form__row">
                         <div className="form__group">
                             <label htmlFor="date">Date</label>
                             <input type="date" name='date' id='date' placeholder='Enter Date' value={formFields.date?.split("T")[0]} className='flex-1'  onChange={handleInputChange} required/>

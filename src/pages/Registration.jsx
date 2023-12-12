@@ -60,7 +60,7 @@ function Registration(props) {
                 </section>
 
                 <section className="p-5">
-                    <form onSubmit={handleSubmit} className='flex flex-col w-1/2 mx-auto gap-1'>
+                    <form onSubmit={handleSubmit} className='flex flex-col register__form w-1/2 mx-auto gap-1'>
                         <p className='text-xl'>Please provide your details</p>
                         {message && <div className='border label__error'>{message}</div>}
                         <div className="flex gap-2">

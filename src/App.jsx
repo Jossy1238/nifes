@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import './Media.css'
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -18,6 +19,7 @@ import MyEvents from './pages/MyEvents';
 import AppContext from './AppContext';
 import Event from './pages/Event';
 import EditEvent from './pages/EditEvent';
+import AddAlumni from './pages/AddAlumni';
 
 function App() {
 
@@ -49,6 +51,8 @@ function App() {
           <Route path='/my-events/:id/edit' element={<EditEvent/>}/>
 
           <Route path='/alumni' element={<Alumni/>}/>
+          <Route path='/alumni/add' element={<AddAlumni/>}/>
+
           <Route path='/alumni/:id/edit' element={<EditAlumni/>}/>
 
         </Routes>

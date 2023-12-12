@@ -18,14 +18,14 @@ function About(props) {
                     </div>
                 </section>
                 <section className="p-5 flex flex-col gap-2">
-                    <div className="flex items-center gap-5 px-5">
-                        <img src="/mission.png" alt="" className='flex-1' />
-                        <p className='flex-1'>
+                    <div className="flex about__mission items-center gap-5 px-5">
+                        <img src="/mission.png" alt="" className='w-1/2' />
+                        <p className='w-1/2'>
                         "Nifes Alumni' mission is to empower its community through lifelong learning, engaging campus events, and fostering valuable connections. We are committed to the continuous professional development of our members, creating memorable campus experiences, and providing a thriving network for meaningful networking and support."
                         </p>
                     </div>
-                    <div className="flex flex-row-reverse items-center gap-5 px-5">
-                        <img src="/vision.png" alt="" className='flex-1' />
+                    <div className="flex vision__sec about__mission flex-row-reverse items-center gap-5 px-5">
+                        <img src="/vision.png" alt="" className='w-1/2' />
                         <p className='flex-1'>
                         "Nifes Alumni' mission is to empower its community through lifelong learning, engaging campus events, and fostering valuable connections. We are committed to the continuous professional development of our members, creating memorable campus experiences, and providing a thriving network for meaningful networking and support."
                         </p>
@@ -34,7 +34,7 @@ function About(props) {
 
                 <section className='p-5 flex flex-col items-center'>
                     <h3 className="section__title text-center">Core Values</h3>
-                    <div className='flex flex-wrap rounded-md bg-white pt-3 justify-between w-1/2'>
+                    <div className='flex flex-wrap rounded-md bg-white pt-3 justify-between core__values w-1/2'>
                         {new Array(4).fill(0).map((_, i)=>(
                             <div className='w-1/2 flex flex-col items-center gap-1 mb-3'>
                                 <i className='fas fa-flag text-5xl text__gradient'></i>
@@ -46,7 +46,7 @@ function About(props) {
 
                 </section>
                 
-                <section className='p-5 flex items-center gap-3 justify-between'>
+                <section className='p-5 achievement__sec flex items-center gap-3 justify-between'>
                     <img src="/achievement.png" alt="" className='w-1/3' />
                     <div className='w-1/2'>
                         <h3 className="section__title">Achievement</h3>
@@ -56,7 +56,7 @@ function About(props) {
 
                 <section className='p-5 flex flex-col items-center gap-3 justify-between'>
                     <h3 className="section__title text-center">Meet Alumni Executives</h3>
-                    <div className='flex  items-center gap-2'>
+                    <div className='flex  items-center gap-2 meet__execs'>
                         {new Array(3).fill(0).map((_, i)=>(
                             <div className='flex bg-white rounded-md overflow-hidden flex-col exec__repeated'>
                                 <img src="/hero.png" alt="" className='cover' />

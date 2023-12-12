@@ -40,8 +40,8 @@ function Login(props) {
 
     return (
         <div className='h-screen full-center'>
-            <div className='w-3/4 flex'>
-                <div className='flex-1'>
+            <div className='w-3/4 login__screen flex items-center'>
+                <div className='flex-1 signin__img'>
                     <img src="/hero.png" alt="" className='' />
                 </div>
                 <form onSubmit={handleLogin} className='flex-1 p-2 login__form'>

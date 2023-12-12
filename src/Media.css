@@ -1,0 +1,412 @@
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 22px;
+    width: 22px;
+}
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}
+
+.app__toggle{
+    display: none;
+}
+
+.main__btn i{
+    display: none;
+}
+
+.action__btn i{
+    display: block;
+}
+
+.main__app {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main__app main{
+    overflow-x: hidden !important;
+}
+
+
+
+@media screen and (max-width:1660px){
+    .register__form{
+        width: 45rem !important;
+        max-width: 100%;
+    }
+
+    .custom__table--container{
+        width: 100%;
+        overflow-x: auto !important;
+    }
+
+    .custom__table{
+        width: 60rem;
+    }
+
+
+
+}
+
+@media screen and (max-width:1440px){
+
+    .hero__title{
+        font-size: 2rem !important;
+        width: 100% !important;
+    }
+
+    .hero__description,
+    .why__left p{
+        width: 100% !important;
+    }
+
+    
+
+}
+
+@media screen and (max-width:1190px){
+    .why__section{
+        flex-direction: column;
+    }
+
+    .why__section>div{width: 100%;}
+    .home__cards .event__card{
+        width: 25rem;
+        max-width: 100%;
+    }
+
+    .core__values{
+        width: 50rem !important;
+        max-width: 100%;
+    }
+    .exec__repeated{
+        width: 30%;
+    }
+
+    .text-5xl{
+        font-size: 2rem !important;
+    }
+
+
+    .signin__img{
+        display: none !important;
+    }
+
+    .login__form>div, .login__form>button {
+        width: 100% !important;
+    }
+
+    .app__toggle{
+        display: block;
+    }
+
+    .app__sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20rem !important;
+        max-width: 75%;
+        height: 100vh;
+        background-color: var(--color-main);
+        transform: translateX(-100%);
+        transition: all ease-in-out .3s;
+        z-index: 999;
+        padding: 5rem 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    
+    }
+
+    
+    .app__header,
+    .sidebar__menu{
+        width: 100% !important;
+    }
+
+    .main__app:has(#appSidebarToggle:checked) .app__sidebar{
+        transform: translateX(0);
+    }
+
+    .app__header .text-3xl,
+    .main__app main .text-3xl{
+        font-size: 1.5rem !important;
+    }
+
+    .main__app main .text-lg{
+        font-size: .85rem !important;
+    }
+
+
+}
+
+@media screen and (max-width:1024px){
+
+    .toggleContainer{
+        display: block !important;
+        position: relative;
+        margin-right: 1rem;
+    }
+
+    header nav.site__nav{
+        position: absolute;
+        background-color: var(--color-main);
+        left: 0;
+        top:0;
+        padding: 15vh 1rem 2rem;
+        width: 100%;
+        height: 100vh;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transform: translateX(-100%);
+        transition: all ease-in-out .3s;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .nav__actions{
+        flex-direction: column; 
+        margin-inline: auto;  
+    }
+
+    header nav ul{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem !important;
+    }
+
+    header:has(input[type=checkbox]:checked) nav{
+        transform: translate(0, 0);
+    }
+
+    .hero{
+        flex-direction: column;
+        height: auto !important;
+        padding-bottom: 3rem;
+    }
+
+    .hero__title{
+        margin-top: 5rem;
+    }
+
+    .hero>div{
+        width: 100%;
+    }
+
+    .faq-item{
+        width: 100%;
+    }
+
+    .footer__top{
+        flex-direction: column;
+        gap: 3rem !important;
+        width: 30rem;
+        max-width: 100%;
+        margin-inline: auto;
+    }
+
+    .testimonial__repeated,
+    .why__box--repeated{
+        width: 20rem !important;
+        max-width: 100%;
+    }
+    
+    .section__title{
+        font-size: 1.25rem !important;
+    }
+
+    .meet__execs{
+        flex-direction: column;
+    }
+
+    .meet__execs>div{
+        width: 25rem !important;
+        max-width: 100%;
+    }
+
+    .about__mission{
+        flex-direction: column !important;
+    }
+
+    .achievement__sec{
+        flex-direction: column-reverse !important;
+    }
+
+    .about__mission .w-1\/2,
+    .achievement__sec>div,
+    .achievement__sec>img{
+        width: 30rem !important;
+        max-width: 100%;
+    }
+    .vision__sec{margin-top: 5rem;}
+
+    footer *{
+        font-size: 95%;
+    }
+
+    footer{padding-top: 2rem !important;}
+    footer .text-2xl{font-size: 1.25rem !important;}
+    
+    .contact__us{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact__us>div,
+    .contact__us>form{
+        width: 30rem !important;
+        max-width: 100%;
+        padding-inline: 0 !important;
+    }
+
+    .form__row{flex-direction: column;}
+
+    .register__form>div:has(.form__group){
+        flex-direction: column;
+    }
+
+    .dashboard h2{font-size: 2rem !important;}
+    .dashboard p{font-size: 1.15rem !important;}
+    .profile__img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .create__event--form{
+        width: 40rem !important;
+        max-width: 100%;
+    
+    }
+
+    .view__event>div{
+        width: 100% !important;
+    }
+    .view__event{padding-inline: 0 !important;}
+
+
+    .custom__table--container{
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+
+    .px-5{
+        padding-inline: 2rem !important;
+    }
+
+    .p-5{
+        padding: 2rem !important;
+    }
+
+    .hero{
+        overflow: hidden;
+        gap: 2rem !important;
+    }
+
+    .about__hero img{
+        max-width: 90%;
+    }
+
+    .about__mission{padding-inline: 0 !important;}
+    .text-5xl,
+    .text-4xl{
+        font-size: 2rem !important;
+    }
+
+    .login__screen{
+        width: 100% !important;
+    }
+
+    .username_{display: none;}
+
+    .main__app{
+        width: 100vw !important;
+    }
+
+    .main__app>div{
+        overflow: hidden;
+    }
+
+    .main__btn span{
+        display: none;
+    }
+    .main__btn i{
+        display: block;
+    }
+
+    .view__event{padding-inline: 0 !important;}
+    .custom__table--container{
+        width: 100%;
+    }
+    
+
+}
+
+@media screen and (max-width:490px){
+
+}
