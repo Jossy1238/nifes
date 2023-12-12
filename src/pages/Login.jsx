@@ -45,6 +45,7 @@ function Login(props) {
                     <img src="/hero.png" alt="" className='' />
                 </div>
                 <form onSubmit={handleLogin} className='flex-1 p-2 login__form'>
+                    <NavLink to="/" className="mb-1">Nifes</NavLink>
                     <h1 className='text-4xl font-600 mb-2'>Sign in!</h1>
                     {message && <div className='border label__error mb-1'>{message}</div>}
                     <div className="form__group">
