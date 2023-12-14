@@ -32,7 +32,7 @@ function AppWrapper({title, children}) {
         {
             name: 'Alumni',
             link: '/alumni',
-            icon: 'fas fa-graduate'
+            icon: 'fas fa-user-graduate'
         },
     ]
 
