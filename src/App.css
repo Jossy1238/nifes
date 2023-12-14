@@ -340,3 +340,28 @@ textarea{
   height: 20rem;
 }
 
+.footer__line{
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+.back__btn{
+  background-color: rgba(0, 0, 255, 0.114);
+  padding: 0.25rem 1rem;
+  width: 7rem;
+}
+
+.sidebar__item i{
+  width: 2rem;
+}
+
+.filter{
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.filter.active{
+  background-color: var(--color-main);
+  border-color: var(--color-main);
+  color: white;
+}

@@ -110,6 +110,8 @@ function EditEvent(props) {
                                 <option value="">Select Category</option>
                                 <option value="networking" selected={formFields.category === "networking"}>Networking</option>
                                 <option value="campus events" selected={formFields.category === "campus events"}>Campus events</option>
+                                <option value="professional development" selected={formFields.category === "professional development"}>Professional development</option>
+
                             </select>
                         </div>
                     </div>

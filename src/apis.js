@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-export const API_URL = "https://nifes-backend.onrender.com";
+// export const API_URL = "https://nifes-backend.onrender.com";
+export const API_URL = "http://localhost:8000";
 
 axios.defaults.withCredentials = true;
 

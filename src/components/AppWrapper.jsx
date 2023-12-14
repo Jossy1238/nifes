@@ -11,15 +11,18 @@ function AppWrapper({title, children}) {
     const sidebarItems = [
         {
             name: 'Dashboard',
-            link: '/dashboard'
+            link: '/dashboard',
+            icon: 'fas fa-tachometer'
         },
         {
             name: 'Events',
-            link: '/all-events'
+            link: '/all-events',
+            icon: 'fas fa-calendar'
         },
         {
             name: 'My Events',
-            link: '/my-events'
+            link: '/my-events',
+            icon: 'fas fa-calendar-check'
         },
         
     ]
@@ -28,7 +31,8 @@ function AppWrapper({title, children}) {
         ...sidebarItems,
         {
             name: 'Alumni',
-            link: '/alumni'
+            link: '/alumni',
+            icon: 'fas fa-graduate'
         },
     ]
 
@@ -109,8 +113,11 @@ function AppWrapper({title, children}) {
                             <ul className='flex flex-col gap-1'>
                                 {menuItems.map((item, index) => {
                                     return (
-                                        <li key={index} className='w-full flex'>
-                                            <NavLink to={item.link} className="sidebar__item" >{item.name}</NavLink>
+                                        <li key={index} className='w-full flex'>                                            
+                                            <NavLink to={item.link} className="sidebar__item" >
+                                                <i className={`${item.icon}`}></i>
+                                                {item.name}
+                                            </NavLink>
                                         </li>
                                     )
                                 })}

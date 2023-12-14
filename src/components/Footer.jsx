@@ -81,7 +81,8 @@ function Footer(props) {
                     </form>
                 </div>
             </div>
-            <div className='flex justify-between pt-3 pb-2'>
+            <div className="footer__line"></div>
+            <div className='flex justify-between pt-2 pb-2'>
                 <p className='text-sm opacity-5'>Copyright © 2022 Nifes | All Rights Reserved </p>
                 <ul className='flex items-center gap-2'>
                     <li>

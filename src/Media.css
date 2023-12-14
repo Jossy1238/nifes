@@ -105,6 +105,31 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
         width: 60rem;
     }
 
+    .about__hero{
+        height: 100vh;
+    }
+
+    .login__screen.w-3\/4{
+        width: 85%;
+    }
+
+    .login__screen h1{font-size: 1.75rem; margin-bottom: 1rem; font-weight: 500;}
+    .login__screen input{
+        padding: 0.5rem 1rem;
+    }
+
+    .signin__img,
+    .signin__img img{
+        height: 100%;
+    }
+
+    .app__header h1{font-size: 1.25rem;}
+    .profile__img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .username_{font-size: 70%;}
+
 
 
 }

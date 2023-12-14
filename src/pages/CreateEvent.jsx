@@ -79,6 +79,8 @@ function CreateEvent(props) {
                             <option value="">Select Category</option>
                             <option value="networking">Networking</option>
                             <option value="campus events">Campus events</option>
+                            <option value="professional development">Professional development</option>
+
                         </select>
                     </div>
                 </div>
@@ -90,6 +92,16 @@ function CreateEvent(props) {
                     <div className="form__group">
                         <label htmlFor="venue">Venue</label>
                         <input type="text" name='venue' id='venue' placeholder='Enter Venue' className='flex-1'  onChange={handleInputChange} required/>
+                    </div>
+                </div>
+                <div className="flex gap-2 mt-2 form__row">
+                    <div className="form__group">
+                        <label htmlFor="date">Time</label>
+                        <input type="time" name='time' id='time' placeholder='Enter Date' className='flex-1'  onChange={handleInputChange} required/>
+                    </div>
+                    <div className="form__group">
+                        <label htmlFor="venue">Speakers</label>
+                        <input type="text" name='speakers' id='speakers' placeholder='Enter the number of speakers' className='flex-1'  onChange={handleInputChange} required/>
                     </div>
                 </div>
                 <div className="form__group mt-2">
