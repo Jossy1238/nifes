@@ -46,7 +46,7 @@ function Alumni(props) {
                 <div className='flex items-center justify-between'>
                     <div>
                         <h2 className='text-3xl font-500'>All Alumni</h2>
-                        <p className='opacity-5 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eligendi?</p>
+                        <p className='opacity-5 text-lg'>The complete record of Registered Nifes Alumni</p>
                     </div>
                     <NavLink to='/alumni/add'><button className='main__btn'>                        
                         <span>Add Alumni</span>
