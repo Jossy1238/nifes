@@ -365,3 +365,7 @@ textarea{
   border-color: var(--color-main);
   color: white;
 }
+
+.alumni__rounded {
+  object-position: top;
+}

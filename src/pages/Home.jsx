@@ -66,13 +66,13 @@ function Home(props) {
             name:'Jossy Nation',
             role:'Alumni Member',
             content:'Joining the Nifes Community web family has been a fantastic experience! It is like finding a digital home where I can connect with fellow alumni, stay updated on news and events, and be part of a vibrant online community. Nifes Community has made it easy for me to stay engaged and connected, and I am excited to be a part of this wonderful online family.',
-            image:'/men.png'
+            image:'/woman.jpg'
         },
         {
             name:'Nosa Julius',
             role:'Alumni Member',
             content:'Joining the Nifes Community web family has been an incredible journey! It is like finding a digital home filled with welcoming faces and shared memories. This online community has reconnected me with old friends and allowed me to make new ones, all while staying updated on the latest Nifes news and events. Nifes Community web platform has made me feel a part of something special, and Iam thrilled to be a member of this thriving online family.',
-            image:'/woman.jpg'
+            image:'/men.png'
         },
       ]
 
