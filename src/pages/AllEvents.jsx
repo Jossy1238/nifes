@@ -43,7 +43,11 @@ function AllEvents(props) {
                 <div className='flex items-center justify-between'>
                     <div className='action__title'>
                         <h2 className='text-3xl font-500'>All Events</h2>
-                        <p className='opacity-5 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eligendi?</p>
+                        <p className='opacity-5 text-lg'>
+                        Explore a world of exciting events, where memorable moments await you. 
+                        Discover and engage with a diverse range of activities that cater to your interests and passions. 
+                        Whether it's a cultural celebration, a thrilling performance, 
+                        or an enlightening seminar, our events bring people together for unforgettable experiences                            </p>
                     </div>
                     <NavLink to='/my-events/create'><button className='main__btn'>
                         <span>Create Event</span>
