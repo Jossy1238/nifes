@@ -43,7 +43,7 @@ function MyEvents(props) {
                 <div className='flex items-center justify-between'>
                     <div>
                         <h2 className='text-3xl font-500'>My Events</h2>
-                        <p className='opacity-5 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, eligendi?</p>
+                        <p className='opacity-5 text-lg'>Explore and manage your upcoming events.</p>
                     </div>
                     <NavLink to='/my-events/create'><button className='main__btn'>
                         <span>Create Event</span>
