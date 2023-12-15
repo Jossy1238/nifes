@@ -11,7 +11,7 @@ function About(props) {
                     <div className="hero__content w-3/5">
                         <h1 className="hero__title text-5xl font-600 w-1/2">This is About Us!</h1>
                         <p>A Community with LOVE!!!</p>
-                        <p className="hero__description py-3 w-3/4">Welcome to the Nifes Alumni Community! Here, we celebrate our shared Nifes experience and look forward to connecting, reminiscing, and making a brighter future together. Welcome home!</p>
+                        <p className="hero__description py-3 w-3/4">The Nifes Alumni Community was founded on a bright and sunny day in June 1985. It all began with a handful of dedicated Nifes alumni who shared a vision of creating a strong and connected network. Over the years, this community has grown, evolved, and thrived, uniting alumni from diverse backgrounds and generations. Today, we stand as a testament!</p>
                     </div>
                     <div className='hero__img relative'>
                         <img src="/hero.png" alt="" />
@@ -27,8 +27,7 @@ function About(props) {
                     <div className="flex vision__sec about__mission flex-row-reverse items-center gap-5 px-5">
                         <img src="/vision.png" alt="" className='w-1/2' />
                         <p className='flex-1'>
-                        "Nifes Alumni' mission is to empower its community through lifelong learning, engaging campus events, and fostering valuable connections. We are committed to the continuous professional development of our members, creating memorable campus experiences, and providing a thriving network for meaningful networking and support."
-                        </p>
+                        Our vision is to create a global community of Nifes alumni where the pursuit of excellence is a shared journey, where connections are meaningful and enduring, and where together, we shape a future that embodies the values and aspirations of our beloved institution. We envision an ever-growing tapestry of success stories, shared memories, and a spirit of unity that transcends time and boundaries, ultimately leaving a positive and lasting impact on individuals, communities, and the world at large."                        </p>
                     </div>
                 </section>
 
