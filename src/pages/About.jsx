@@ -13,7 +13,7 @@ function About(props) {
         {
             name:'Oyemwen LAW',
             role:'Vice Chairperson',
-            image:'/Jossy Nation Photograph.jpg'
+            image:'/JossyNation.jpg'
         },
         {
             name:'Nest BRICKS',
