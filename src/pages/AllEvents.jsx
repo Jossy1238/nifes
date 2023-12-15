@@ -45,8 +45,6 @@ function AllEvents(props) {
                         <h2 className='text-3xl font-500'>All Events</h2>
                         <p className='opacity-5 text-lg'>
                         Explore a world of exciting events, where memorable moments await you.
-                        Discover and engage with a diverse range of activities that cater to your interests and passions. 
-
                             </p>
                     </div>
                     <NavLink to='/my-events/create'><button className='main__btn'>
