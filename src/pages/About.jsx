@@ -3,6 +3,25 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 function About(props) {
+
+    const NifesTeam = [
+        {
+            name:'Jossy Nation',
+            role:'Alumni Member',
+            image:'/woman.jpg'
+        },
+        {
+            name:'Nosa Julius',
+            role:'Alumni Member',
+            image:'/men.png'
+        },
+        {
+            name:'Nosa Julius',
+            role:'Alumni Member',
+            image:'/men.png'
+        },
+      ]
+
     return (
         <>
             <Header/>
@@ -57,11 +76,11 @@ function About(props) {
                 <section className='p-5 flex flex-col items-center gap-3 justify-between'>
                     <h3 className="section__title text-center">Meet Alumni Executives</h3>
                     <div className='flex  items-center gap-2 meet__execs'>
-                        {new Array(3).fill(0).map((_, i)=>(
+                        {NifesTeam.map((NifesTeam, i)=>(
                             <div className='flex bg-white rounded-md overflow-hidden flex-col exec__repeated'>
-                                <img src="/hero.png" alt="" className='cover' />
-                                <p className='px-1 mt-1 text-xl'>Johnny Drille</p>
-                                <p className='px-1 mb-1 oapcity-7'>President</p>                                
+                                <img src={NifesTeam.image} alt="" className='cover' />
+                                <p className='px-1 mt-1 text-xl'>{NifesTeam.name}</p>
+                                <p className='px-1 mb-1 oapcity-7'>{NifesTeam.role}</p>                                
                             </div>
                         ))
 
