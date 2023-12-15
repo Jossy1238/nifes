@@ -41,6 +41,42 @@ function Home(props) {
           getAllUpcomingEvents();
       }, [])
   
+      const whyArray = [
+        {
+            title:"Effective Connection",
+            description:"Nifes is where many of us formed lasting friendships and bonds that continue to enrich our lives. The connections made during our time at Nifes are often some of the strongest and most enduring."
+
+        },
+        {
+            title:"Engagement",
+            description:"Nifes Alumni Community gives a sense of belonging and a place to call home. It's where we learned, grew, and became the individuals we are today via engaging on different event."
+        },
+        {
+            title:"Collaboration",
+            description:"Nifes has always stood for more than just an educational institution. It's a place where collaboration thrives, and it plays a pivotal role in our Nifes experience. Here's why collaboration at Nifes is so essential"
+        },
+        {
+            title:"Education",
+            description:"Nifes Alumni community offers a platform for personal and professional development, allowing us to explore our passions and potential."
+        }
+      ]
+
+      const testimonials = [
+        {
+            name:'Jossy Nation',
+            role:'Alumni Member',
+            content:'Joining the Nifes Community web family has been a fantastic experience! It is like finding a digital home where I can connect with fellow alumni, stay updated on news and events, and be part of a vibrant online community. Nifes Community has made it easy for me to stay engaged and connected, and I am excited to be a part of this wonderful online family.',
+            image:'/men.png'
+        },
+        {
+            name:'Nosa Julius',
+            role:'Alumni Member',
+            content:'Joining the Nifes Community web family has been an incredible journey! It is like finding a digital home filled with welcoming faces and shared memories. This online community has reconnected me with old friends and allowed me to make new ones, all while staying updated on the latest Nifes news and events. Nifes Community web platform has made me feel a part of something special, and Iam thrilled to be a member of this thriving online family.',
+            image:'/woman.jpg'
+        },
+      ]
+
+
     
 
     return (
@@ -66,11 +102,11 @@ function Home(props) {
                         <NavLink to='/about'><button className='main__btn'>Know More</button></NavLink>
                     </div>
                     <div className='w-3/5 flex flex-wrap justify-between gap-3'>
-                        {new Array(4).fill(0).map((_, i)=>(
+                        {whyArray.map((why, i)=>(
                             <div className={`why__box--repeated bg-white p-2 shadow-5 border-top-${i+1}`}>
                                 <img src={`why${i+1}.svg`} alt="" className='why__icon' />
-                                <h5 className='mt-1 mb-2'>Effective Connection</h5>
-                                <p className=''>Nifes is where many of us formed lasting friendships and bonds that continue to enrich our lives. The connections made during our time at Nifes are often some of the strongest and most enduring.</p>
+                                <h5 className='mt-1 mb-2'>{why.title}</h5>
+                                <p className=''>{why.description}</p>
                             </div>
                         ))
 
@@ -114,15 +150,15 @@ function Home(props) {
                 <section className='flex flex-col items-center py-5'>
                     <h3 className="section__title text-center">Alumni Testimonial</h3>
                     <div className='flex flex-wrap justify-center gap-5 mt-3'>
-                        {new Array(2).fill(0).map((_, i)=>(
+                        {testimonials.map((testimonial, i)=>(
                             <div className='testimonial__repeated bg-white py-2 px-2 text-center w-1/3 flex flex-col items-center'>
-                                <img src="/hero.png" alt="" className="alumni__rounded cover rounded-full" />
+                                <img src={testimonial.image} alt="" className="alumni__rounded cover rounded-full" />
                                 <div className='my-1'>
-                                    <h5 className='text-xl font-600'>Jossy Nation</h5>
-                                    <div>Alumni</div>
+                                    <h5 className='text-xl font-600'>{testimonial.name}</h5>
+                                    <div>{testimonial.role}</div>
                                 </div>
                                 <p>
-                                Joining the Nifes Community web family has been a fantastic experience! It's like finding a digital home where I can connect with fellow alumni, stay updated on news and events, and be part of a vibrant online community. Nifes Community has made it easy for me to stay engaged and connected, and I'm excited to be a part of this wonderful online family.
+                                    {testimonial.content}
                                 </p>
                             </div>
                         ))}
