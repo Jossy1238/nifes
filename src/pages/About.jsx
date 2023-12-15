@@ -10,7 +10,9 @@ function About(props) {
                 <section className="hero bg__main about__hero flex justify-between px-5 gap-5 items-center">
                     <div className="hero__content w-3/5">
                         <h1 className="hero__title text-5xl font-600 w-1/2">This is About Us!</h1>
+                        {/* <p>A Community with LOVE!!!</p> */}
                         <p>A Community with LOVE!!!</p>
+                        <h2></h2>
                         <p className="hero__description py-3 w-3/4">The Nifes Alumni Community was founded on a bright and sunny day in June 1985. It all began with a handful of dedicated Nifes alumni who shared a vision of creating a strong and connected network. Over the years, this community has grown, evolved, and thrived, uniting alumni from diverse backgrounds and generations. Today, we stand as a testament!</p>
                     </div>
                     <div className='hero__img relative'>
