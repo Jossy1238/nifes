@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import AppWrapper from '../components/AppWrapper';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { getAllUsers } from '../apis';
+import { deleteUser, getAllUsers } from '../apis';
 import Loader from '../components/Loader';
 import AppContext from '../AppContext';
 
@@ -38,6 +38,26 @@ function Alumni(props) {
 
         getUsers();
     }, [])
+
+    const [currentId, setCurrentId] = useState("");
+    const [deleting, setDeleting] = useState(false);
+    const handleDeleteUser = async(id)=>{
+        setCurrentId(id)
+        try {
+            const response = await deleteUser(id);
+            if(response){
+                console.log(response)
+                window.location.reload();
+            }
+            
+        } catch (error) {
+            console.log(error)                        
+        }
+        finally{
+            setDeleting(false)
+        }
+    }
+
 
 
     return (
@@ -88,8 +108,8 @@ function Alumni(props) {
                                                 </button>
                                             </NavLink>
                                             {user._id !== uId &&
-                                            <button className='main__btn action__btn'>
-                                                <i className='fas fa-trash'></i>
+                                            <button onClick={()=>handleDeleteUser(user._id)} className='main__btn action__btn'>
+                                                {deleting ? "...":<i className='fas fa-trash'></i>}
                                             </button>}
                                         </div>
                                     </div>

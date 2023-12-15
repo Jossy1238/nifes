@@ -143,6 +143,15 @@ export async function deleteEvent(id){
 
 }
 
+export async function deleteUser(id){
+    const url = `${API_URL}/users/${id}`
+    return axios.delete(
+            url,
+            )
+            .then(response => response.data)
+
+}
+
 
 export async function subscribe(data){
     const url = `${API_URL}/subscribe`
