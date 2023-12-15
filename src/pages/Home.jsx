@@ -119,7 +119,7 @@ function Home(props) {
                                 <img src="/hero.png" alt="" className="alumni__rounded cover rounded-full" />
                                 <div className='my-1'>
                                     <h5 className='text-xl font-600'>Jossy Nation</h5>
-                                    <div>Alumni Member</div>
+                                    <div>Alumni</div>
                                 </div>
                                 <p>
                                 Joining the Nifes Community web family has been a fantastic experience! It's like finding a digital home where I can connect with fellow alumni, stay updated on news and events, and be part of a vibrant online community. Nifes Community has made it easy for me to stay engaged and connected, and I'm excited to be a part of this wonderful online family.
