@@ -6,19 +6,19 @@ function About(props) {
 
     const NifesTeam = [
         {
-            name:'Jossy Nation',
-            role:'Alumni Member',
-            image:'/woman.jpg'
+            name:'Johnny DRILLE',
+            role:'Chairperson',
+            image:'/another man.jpg'
         },
         {
-            name:'Nosa Julius',
-            role:'Alumni Member',
-            image:'/men.png'
+            name:'Oyemwen LAW',
+            role:'Vice Chairperson',
+            image:'/Jossy Nation Photograph.png'
         },
         {
-            name:'Nosa Julius',
-            role:'Alumni Member',
-            image:'/men.png'
+            name:'Nest BRICKS',
+            role:'Secretary',
+            image:'/newwoman.png'
         },
       ]
 
