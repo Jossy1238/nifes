@@ -136,6 +136,7 @@ footer a:hover{
 
 .exec__repeated img{
   height: 20rem;
+  object-position: top;
 }
 
 .top__padding{
