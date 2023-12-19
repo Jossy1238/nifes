@@ -22,6 +22,25 @@ function About(props) {
         },
       ]
 
+      const CoreValues = [
+        {
+            tname:'Johnny DRILLE',
+           
+        },
+        {
+            tname:'Oyemwen LAW',
+            
+        },
+        {
+            tname:'Nest BRICKS',
+           
+        },
+        {
+            tname:'Nest BRICKS',
+          
+        },
+      ]
+
     return (
         <>
             <Header/>
@@ -54,10 +73,10 @@ function About(props) {
                 <section className='p-5 flex flex-col items-center'>
                     <h3 className="section__title text-center">Core Values</h3>
                     <div className='flex flex-wrap rounded-md bg-white pt-3 justify-between core__values w-1/2'>
-                        {new Array(4).fill(0).map((_, i)=>(
+                    {CoreValues.map((CoreValues, i)=>(
                             <div className='w-1/2 flex flex-col items-center gap-1 mb-3'>
                                 <i className='fas fa-flag text-5xl text__gradient'></i>
-                                <p>Commitment</p>
+                                <p>{CoreValues.tname}</p>
                             </div>
                         ))
                         }
