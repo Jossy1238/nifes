@@ -12,53 +12,59 @@ export const questions = {
       {
         question:'Who are we?',
         answer:`
-        We are a technology startup intent on
-        employing a global approach and a local
-        understanding to solving farming challenges.
-        Based in Mauritius, but with projected
-        operations in the Rwandan and African
-        market, we are assembling a team of
-        stakeholders and team players to bring to
-        market products that embody the Agriculture
-        4.0 concept.
+        The Nifes Alumni Community was founded on a bright and sunny day in June 1985.
+        It all began with a handful of dedicated Nifes alumni who shared a vision 
+        of creating a strong and connected network. Over the years, this community has grown, 
+        evolved, and thrived, uniting alumni from diverse backgrounds and generations. 
+        Today, we stand as a testament!
         `
     },
 
     questionTwo:
       {
-        question:'What problem are we solving?',
+        question:'How do I register for Nifes Alumni Community?',
         answer:`
-        The problem we are attempting to solve is straightforward but profound. 
-        Farmers and food gardeners suffer enormous losses when their resources and efforts are directed toward 
-        farming practices with many unknown variables, such as appropriate soil content, weather patterns, and
-         their variability, resulting in unproductivity, low and poor yield, and an increasing rate of seed death.
-          Furthermore, it is difficult to detect and assess these conditions quickly or to obtain personalized timely 
-          information on them prior to sowing season, particularly when farms are located far from research centers.
+        To register for the Nifes Alumni Community, simply visit the community's website and click on the prominently 
+        displayed "Register Now" button on the homepage. This action will lead you to a user-friendly 
+        registration form. Please ensure that you enter accurate and up-to-date information into the 
+        required fields to facilitate a successful registration process. 
+        Once you've completed the form, click the "Submit" button. Congratulations, 
+        you are now an official member of the Nifes Alumni Community! 
+        Expect to receive a confirmation email, and from there, you can begin exploring the community, 
+        connecting with fellow alumni, and staying informed about upcoming events and activities. 
+        If you encounter any challenges during the registration process, 
+        feel free to reach out to the support team for assistance. 
+        Welcome to the Nifes Alumni Community!
 
         `
     },
     questionThree:
       {
-        question:'How are we tackling this problem? ',
+        question:'Can I update my contact information and personal details on my alumni profile after registration?',
         answer:`
-        We are building the dotTerra AI. With this, we will assess, monitor, and predict critical farming system 
-        resources (soil content, water, weather, etc.) as it operates and advise on measures to solve them before 
-        they become a problem to prevent immense losses and poor farming practices. We will also proactively detect 
-        important changes in the agro-ecosystems as soon as they occur. All these are done within milliseconds to give
-         farmers a head start in mitigating issues otherwise heavily consequential risks. As a result, the farmer becomes 
-         proactive to maximize and optimize yields rather than reactive.
+        You can update your contact information and personal details on 
+        your alumni profile after registration. To make any changes, please email your updated credentials, 
+        along with the specific information you would like to update, to alumnimanager@email.com. 
+        Our dedicated team will process your request, and within two working days, 
+        your alumni profile will be updated with the new information. If you have any further questions
+         or need assistance, feel free to reach out to us at the provided email address. 
+        We appreciate your commitment to keeping your alumni profile accurate and up-to-date.
         `
     },
     
     questionFour:
       {
-        question:'What do we need from you?',
+        question:'How can I stay informed about upcoming alumni events and news through the Nifes Alumni Community website?        ',
         answer:`
-        We are keen on employing a local approach to our intervention.
-        We believe that consumer insight should play a significant role in influencing a
-        product’s dynamic. We are currently building the Minimum Viable Product iteration
-        of the dot Terra AI. We would love to work with you, to prove the concept of our
-        product.
+        To stay informed about upcoming alumni events and news through the Nifes Alumni Community website, 
+        simply enter your correct email address in the "Subscribe Now" space located within the website's 
+        footer. Once you've entered your email, click on the "Submit" button. By subscribing,
+         you will receive regular updates, newsletters, and notifications directly to your inbox, 
+         ensuring that you stay connected with the latest happenings, events,
+          and news within the Nifes Alumni Community. If you have any questions or 
+          need further assistance, feel free to reach out to our support team. 
+          Stay engaged and informed by subscribing to our 
+        updates—we look forward to keeping you connected with the vibrant Nifes alumni community!
         `
     }
 
