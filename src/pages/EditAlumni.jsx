@@ -82,7 +82,7 @@ function EditAlumni(props) {
             <form onSubmit={handleUpdateUser} className='pt-3 create__event--form flex flex-col'>
                 <div>
                     <h3 className='text-3xl font-500'>Edit Alumni</h3>
-                    <p className='opacity-5 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, temporibus!</p>
+                    <p className='opacity-5 text-lg'>Keep the Alumni Record Correct and up-to-date</p>
                 </div>
 
                 {
