@@ -64,7 +64,7 @@ function CreateEvent(props) {
             <form onSubmit={handleSubmit} className='pt-3 create__event--form flex flex-col'>
                 <div className=''>
                     <h3 className='text-3xl font-500'>Create Event</h3>
-                    <p className='opacity-5 text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, temporibus!</p>
+                    <p className='opacity-5 text-lg'>Bring more event on board!!!</p>
                 </div>
                 {message.text && <div className={`border mt-2 w-full ${message.type=="error" ? "label__error":"label__success"}`}>{message.text}</div>}
 
