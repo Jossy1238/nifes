@@ -24,19 +24,20 @@ function About(props) {
 
       const CoreValues = [
         {
-            tname:'Johnny DRILLE',
+            tname:'Commitment',
+            
            
         },
         {
-            tname:'Oyemwen LAW',
+            tname:'Self Development',
             
         },
         {
-            tname:'Nest BRICKS',
+            tname:'Community',
            
         },
         {
-            tname:'Nest BRICKS',
+            tname:'Excellent',
           
         },
       ]
